@@ -1,0 +1,46 @@
+
+/* hide scroll bar */
+::-webkit-scrollbar {
+    display: none;
+}
+/* --- */
+
+/* horizontal scroll */
+@media (max-width: 991px) {
+
+  .outer {
+    overflow-x: scroll;
+  }
+
+  .inner {
+    min-width: 100vw;
+    min-height: 50vh;
+  }
+
+  img {
+    max-width: 85vw;
+    max-height: 35vh;
+  }
+
+}
+/* --- */
+
+/* vertical scroll */
+@media (min-width: 992px) {
+
+  .outer {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  .inner {
+    min-height: 100vh;
+  }
+
+  img {
+    max-width: 35vw;
+    max-height: 85vh;
+  }
+
+}
+/* --- */
